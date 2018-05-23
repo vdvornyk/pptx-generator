@@ -1,0 +1,30 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvSpPr>
+        <p:cNvPr id="${part_id}" name="PAGE NUMBER"/>
+        <p:cNvSpPr>
+            <a:spLocks noGrp="1" noChangeArrowheads="1"/>
+        </p:cNvSpPr>
+        <p:nvPr>
+            <p:ph type="sldNum" sz="quarter" idx="10"/>
+            <p:custDataLst>
+                <p:tag name="FONT STYLE" val="SANS SERIF"/>
+            </p:custDataLst>
+        </p:nvPr>
+    </p:nvSpPr>
+    <p:spPr>
+        <a:noFill/>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr/>
+        <a:lstStyle/>
+        <a:p>
+            <a:fld id="{E14BD21C-D924-4CD5-9B56-A7AB207D4642}" type="slidenum">
+                <a:rPr lang="zh-TW" altLang="en-US" smtClean="0"/>
+                <a:pPr/>
+                <a:t>${page_num}</a:t>
+            </a:fld>
+            <a:endParaRPr lang="en-US" altLang="zh-TW" smtClean="0"/>
+        </a:p>
+    </p:txBody>
+</p:sp>

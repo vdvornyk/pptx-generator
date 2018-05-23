@@ -1,0 +1,58 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvSpPr>
+        <p:cNvPr id="${part_id}" name="PRESENTATION TITLE"/>
+        <p:cNvSpPr>
+            <a:spLocks noGrp="1" noChangeArrowheads="1"/>
+        </p:cNvSpPr>
+        <p:nvPr>
+            <p:ph type="ctrTitle" idx="4294967295"/>
+            <p:custDataLst>
+                <p:tagLst>
+                    <p:tag name="FONT STYLE" val="SERIF"/>
+                    <p:tag name="TEXT_TYPE" val="PRESENTATION TITLE"/>
+                    <p:tag name="TOP" val="152.25"/>
+                    <p:tag name="LEFT" val="59.25"/>
+                    <p:tag name="WIDTH" val="549.75"/>
+                    <p:tag name="HEIGHT" val="118.5"/>
+                </p:tagLst>
+            </p:custDataLst>
+        </p:nvPr>
+    </p:nvSpPr>
+    <p:spPr bwMode="gray">
+        <a:xfrm>
+            <a:off x="430213" y="2428875"/>
+            <a:ext cx="7778750" cy="1398588"/>
+        </a:xfrm>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr/>
+        <a:lstStyle/>
+        <a:p>
+            <a:pPr>
+                <a:lnSpc>
+                    <a:spcPct val="100000"/>
+                </a:lnSpc>
+            </a:pPr>
+            <a:r>
+                <a:rPr lang="en-GB" altLang="zh-TW" sz="4500" smtClean="0"/>
+                <a:t>${projectName}</a:t>
+            </a:r>
+            <a:br>
+                <a:rPr lang="en-GB" altLang="zh-TW" sz="4500" smtClean="0"/>
+            </a:br>
+            <a:r>
+                <a:rPr lang="en-GB" altLang="zh-TW" sz="2400" smtClean="0"/>
+                <a:t>${tranche}</a:t>
+            </a:r>
+            <a:br>
+                <a:rPr lang="en-GB" altLang="zh-TW" sz="2400" smtClean="0"/>
+            </a:br>
+            <a:r>
+                <a:rPr lang="en-GB" altLang="zh-TW" sz="2400" smtClean="0"/>
+                <a:t>${title}</a:t>
+            </a:r>
+            <a:endParaRPr lang="en-US" altLang="zh-TW" sz="2400" smtClean="0"/>
+        </a:p>
+    </p:txBody>
+</p:sp>

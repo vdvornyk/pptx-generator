@@ -1,0 +1,81 @@
+apply from: "$rootDir/gradle/wrapper.gradle"
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'application'
+apply plugin: 'fatjar'
+
+mainClassName = "org.rallyplugins.Main"
+
+description = "PPTX for generation for Sprint Review"
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+compileJava.options.encoding = 'UTF-8'
+
+buildDir= 'target'
+
+repositories {
+		mavenCentral()
+}
+
+ext{
+	springVersion = '3.2.3.RELEASE'
+	jettyVersion = '8.1.5.v20120716'
+	jettyJspVersion = '8.1.4.v20120524'
+	slf4jVersion = '1.7.2'	
+}
+	
+buildscript {  
+    dependencies {
+        classpath files('gradle-plugins/gradle-fatjar-plugin-0.2.jar')		
+    }
+}
+dependencies{
+		compile "org.codehaus.jackson:jackson-mapper-asl:1.9.10",
+				"org.springframework:spring-context:$springVersion",
+				"org.springframework:spring-webmvc:$springVersion",
+				"org.eclipse.jetty:jetty-server:$jettyVersion",
+				"org.eclipse.jetty:jetty-servlet:$jettyVersion",			
+				"org.eclipse.jetty:jetty-webapp:$jettyVersion",
+				"org.eclipse.jetty:jetty-servlets:$jettyVersion",
+				"org.eclipse.jetty:jetty-jsp:$jettyJspVersion",
+				"javax.servlet:jstl:1.2",
+				"org.docx4j:docx4j:2.8.1",
+				"commons-lang:commons-lang:2.5",
+				"com.google.guava:guava:12.0",
+				"com.google.code.gson:gson:2.1",
+				"org.apache.httpcomponents:httpclient:4.2.1",
+				"org.jsoup:jsoup:1.7.2",
+				"org.slf4j:slf4j-api:$slf4jVersion",				
+				"org.slf4j:jcl-over-slf4j:$slf4jVersion",
+				"org.slf4j:jul-to-slf4j:$slf4jVersion",
+				"org.slf4j:slf4j-log4j12:$slf4jVersion"		
+        
+	 	testCompile 'junit:junit:4.9',
+					'org.mockito:mockito-all:1.8.4'				
+}
+
+fatJarPrepareFiles {
+  include 'META-INF/spring.handlers'
+  include 'META-INF/spring.schemas'
+  include 'META-INF/spring.tooling'  
+}
+
+fatJar {
+   exclude 'META-INF/*.SF'
+   exclude 'META-INF/*.DSA'
+   exclude 'META-INF/*.RSA' 
+   manifest {
+        attributes "Implementation-Title": "Websdk pptx"
+        attributes "Implementation-Version": '1.0'
+        attributes "Main-Class" : 'org.rallyplugins.Main'
+    }		
+	doFirst {			
+		into ('META-INF'){
+			from "src/main/java/META-INF"        
+		}
+		into ('resources'){
+			from "src/main/resources"
+		}
+	}  
+}

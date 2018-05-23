@@ -1,0 +1,36 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+      xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvSpPr>
+        <p:cNvPr id="${part_id}" name="Rectangle 2"/>
+        <p:cNvSpPr>
+            <a:spLocks noGrp="1" noChangeArrowheads="1"/>
+        </p:cNvSpPr>
+        <p:nvPr>
+            <p:ph type="body" idx="1"/>
+        </p:nvPr>
+    </p:nvSpPr>
+    <p:spPr>
+        <a:xfrm>
+            <a:off x="765175" y="1071563"/>
+            <a:ext cx="8623300" cy="3119437"/>
+        </a:xfrm>
+        <a:noFill/>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr anchor="ctr" anchorCtr="1"/>
+        <a:lstStyle/>
+        <a:p>
+            <a:pPr algn="ctr">
+                <a:buFont typeface="Symbol" pitchFamily="18" charset="2"/>
+                <a:buNone/>
+            </a:pPr>
+            <a:r>
+                <a:rPr lang="en-US" sz="6000" smtClean="0">
+                    <a:latin typeface="Headline" pitchFamily="18" charset="0"/>
+                </a:rPr>
+                <a:t>Your questions are welcome!</a:t>
+            </a:r>
+        </a:p>
+    </p:txBody>
+</p:sp>

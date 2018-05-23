@@ -1,0 +1,36 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+      xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvSpPr>
+        <p:cNvPr id="${part_id}" name="Line 11"/>
+        <p:cNvSpPr>
+            <a:spLocks noChangeShapeType="1"/>
+        </p:cNvSpPr>
+        <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr bwMode="gray">
+        <a:xfrm rot="5400000">
+            <a:off x="7265988" y="419100"/>
+            <a:ext cx="850900" cy="0"/>
+        </a:xfrm>
+        <a:prstGeom prst="line">
+            <a:avLst/>
+        </a:prstGeom>
+        <a:noFill/>
+        <a:ln w="31750">
+            <a:solidFill>
+                <a:srgbClr val="E60000"/>
+            </a:solidFill>
+            <a:round/>
+            <a:headEnd/>
+            <a:tailEnd/>
+        </a:ln>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr lIns="0" tIns="0" rIns="0" bIns="0"/>
+        <a:lstStyle/>
+        <a:p>
+            <a:endParaRPr lang="en-US"/>
+        </a:p>
+    </p:txBody>
+</p:sp>

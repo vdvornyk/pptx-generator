@@ -1,0 +1,53 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvSpPr>
+        <p:cNvPr id="${part_id}" name="CREATE DATE"/>
+        <p:cNvSpPr txBox="1">
+            <a:spLocks noChangeArrowheads="1"/>
+        </p:cNvSpPr>
+        <p:nvPr>
+            <p:custDataLst>
+                <p:tagLst>
+                    <p:tag name="TEXT_TYPE" val="CREATE DATE"/>
+                    <p:tag name="FONT STYLE" val="SANS SERIF"/>
+                    <p:tag name="TOP" val="548.875"/>
+                    <p:tag name="LEFT" val="60.5"/>
+                    <p:tag name="WIDTH" val="281.375"/>
+                    <p:tag name="HEIGHT" val="21.625"/>
+                </p:tagLst>
+            </p:custDataLst>
+        </p:nvPr>
+    </p:nvSpPr>
+    <p:spPr bwMode="gray">
+        <a:xfrm>
+            <a:off x="419100" y="7010400"/>
+            <a:ext cx="1931988" cy="246063"/>
+        </a:xfrm>
+        <a:prstGeom prst="rect">
+            <a:avLst/>
+        </a:prstGeom>
+        <a:noFill/>
+        <a:ln w="28575">
+            <a:noFill/>
+            <a:miter lim="800000"/>
+            <a:headEnd/>
+            <a:tailEnd/>
+        </a:ln>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr lIns="0" tIns="0" rIns="0" bIns="0"/>
+        <a:lstStyle/>
+        <a:p>
+            <a:pPr algn="l" defTabSz="1006475" eaLnBrk="0" hangingPunct="0"/>
+            <a:r>
+                <a:rPr lang="en-US" altLang="zh-TW" sz="1600">
+                    <a:solidFill>
+                        <a:srgbClr val="000000"/>
+                    </a:solidFill>
+                    <a:latin typeface="Frutiger 55 Roman" pitchFamily="34" charset="0"/>
+                </a:rPr>
+                <a:t>${date}</a:t>
+            </a:r>
+        </a:p>
+    </p:txBody>
+</p:sp>

@@ -1,0 +1,60 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvSpPr>
+        <p:cNvPr id="${part_id}" name="Rectangle 3"/>
+        <p:cNvSpPr>
+            <a:spLocks noGrp="1" noChangeArrowheads="1"/>
+        </p:cNvSpPr>
+        <p:nvPr>
+            <p:ph type="body" idx="1"/>
+        </p:nvPr>
+    </p:nvSpPr>
+    <p:spPr>
+        <a:xfrm>
+            <a:off x="419100" y="1322388"/>
+            <a:ext cx="9186863" cy="4930775"/>
+        </a:xfrm>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr/>
+        <a:lstStyle/>
+        <a:p>
+            <a:r>
+                <a:rPr lang="en-US" smtClean="0">
+                    <a:latin typeface="Headline" pitchFamily="18" charset="0"/>
+                </a:rPr>
+                <a:t>Overview of the Sprint Goals</a:t>
+            </a:r>
+        </a:p>
+        <a:p>
+            <a:r>
+                <a:rPr lang="en-US" smtClean="0">
+                    <a:latin typeface="Headline" pitchFamily="18" charset="0"/>
+                </a:rPr>
+                <a:t>User stories presentation for different stakeholder groups</a:t>
+            </a:r>
+        </a:p>
+        ${stkh_group}
+        <a:p>
+            <a:r>
+                <a:rPr lang="en-US" smtClean="0">
+                    <a:latin typeface="Headline" pitchFamily="18" charset="0"/>
+                </a:rPr>
+                <a:t>Features demonstration</a:t>
+            </a:r>
+        </a:p>
+        <a:p>
+            <a:r>
+                <a:rPr lang="en-US" smtClean="0">
+                    <a:latin typeface="Headline" pitchFamily="18" charset="0"/>
+                </a:rPr>
+                <a:t>Sprint Velocity and Scope changes summary</a:t>
+            </a:r>
+        </a:p>
+        <a:p>
+            <a:endParaRPr lang="en-GB" smtClean="0">
+                <a:latin typeface="Headline" pitchFamily="18" charset="0"/>
+            </a:endParaRPr>
+        </a:p>
+    </p:txBody>
+</p:sp>

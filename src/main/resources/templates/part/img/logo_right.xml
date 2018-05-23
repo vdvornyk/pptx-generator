@@ -1,0 +1,34 @@
+<p:pic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+       xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+       xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvPicPr>
+        <p:cNvPr id="${part_id}" name="logo" descr="right"/>
+        <p:cNvPicPr>
+            <a:picLocks noChangeArrowheads="true" noChangeAspect="true"/>
+        </p:cNvPicPr>
+        <p:nvPr/>
+    </p:nvPicPr>
+    <p:blipFill>
+        <a:blip r:embed="${rEmbedId}" cstate="print"/>
+        <a:srcRect/>
+        <a:stretch>
+            <a:fillRect/>
+        </a:stretch>
+    </p:blipFill>
+    <p:spPr bwMode="gray">
+        <a:xfrm>
+            <a:off x="8675688" y="533400"/>
+            <a:ext cx="930275" cy="355600"/>
+        </a:xfrm>
+        <a:prstGeom prst="rect">
+            <a:avLst/>
+        </a:prstGeom>
+        <a:noFill/>
+        <a:ln w="19050">
+            <a:noFill/>
+            <a:miter lim="800000"/>
+            <a:headEnd/>
+            <a:tailEnd/>
+        </a:ln>
+    </p:spPr>
+</p:pic>

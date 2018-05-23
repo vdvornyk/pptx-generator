@@ -1,0 +1,33 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+<p:nvSpPr>
+    <p:cNvPr id="${part_id}" name="Rectangle 2"/>
+    <p:cNvSpPr>
+        <a:spLocks noGrp="1" noChangeArrowheads="1"/>
+    </p:cNvSpPr>
+    <p:nvPr>
+        <p:ph type="title"/>
+        <p:custDataLst>
+            <p:tag name="TEXT_TYPE" val="PAGE HEADING"/>
+        </p:custDataLst>
+    </p:nvPr>
+</p:nvSpPr>
+<p:spPr>
+    <a:xfrm>
+        <a:off x="463550" y="457200"/>
+        <a:ext cx="8978900" cy="423863"/>
+    </a:xfrm>
+</p:spPr>
+<p:txBody>
+    <a:bodyPr/>
+    <a:lstStyle/>
+    <a:p>
+        <a:r>
+            <a:rPr lang="en-US" sz="2600" smtClean="0"/>
+            <a:t>${headline}</a:t>
+        </a:r>
+        <a:endParaRPr lang="en-GB" sz="2600" smtClean="0"/>
+    </a:p>
+</p:txBody>
+</p:sp>

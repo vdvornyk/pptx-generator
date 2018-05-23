@@ -1,0 +1,42 @@
+<settings>
+    <localRepository>file:///var/tmp/maven_srlweb</localRepository>
+
+    <servers>
+        <server>
+            <id>rep-releases</id>
+            <username>deployment</username>
+            <password>deploy</password>
+        </server>
+
+        <server>
+            <id>rep-snapshots</id>
+            <username>deployment</username>
+            <password>deploy</password>
+        </server>
+
+    </servers>
+
+    <mirrors>
+        <mirror>
+            <id>nexus</id>
+            <mirrorOf>*</mirrorOf>
+            <name>Internal Mirror of Repositories Hosted by Nexus.</name>
+            <url>http://nexus.host:8081/nexus/content/groups/srl</url>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile>
+            <id>srlweb</id>
+
+            <properties>
+                <maven.releases.repo.url>http://nexus.host:8081/nexus/content/repositories/releases</maven.releases.repo.url>
+                <maven.snapshots.repo.url>http://nexus.host:8081/nexus/content/repositories/snapshots</maven.snapshots.repo.url>
+            </properties>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>srlweb</activeProfile>
+    </activeProfiles>
+</settings>

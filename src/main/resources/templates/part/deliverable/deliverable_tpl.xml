@@ -1,0 +1,26 @@
+<p:graphicFrame xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+                xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+                xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvGraphicFramePr>
+        <p:cNvPr id="${part_id}" name="delivery table"/>
+        <p:cNvGraphicFramePr>
+            <a:graphicFrameLocks noGrp="1"/>
+        </p:cNvGraphicFramePr>
+        <p:nvPr/>
+    </p:nvGraphicFramePr>
+    <p:xfrm>
+        <a:off x="419100" y="1114425"/>
+        <a:ext cx="9177338" cy="5418138"/>
+    </p:xfrm>
+    <a:graphic>
+        <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/table">
+            <a:tbl>
+                <a:tblPr/>
+                <a:tblGrid>
+                    ${gridColList}
+                </a:tblGrid>
+                ${gridRowList}
+            </a:tbl>
+        </a:graphicData>
+    </a:graphic>
+</p:graphicFrame>

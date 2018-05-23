@@ -1,0 +1,48 @@
+<p:sp xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+      xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+    <p:nvSpPr>
+        <p:cNvPr id="${part_id}" name="Rectangle 4"/>
+        <p:cNvSpPr>
+            <a:spLocks noChangeArrowheads="1"/>
+        </p:cNvSpPr>
+        <p:nvPr/>
+    </p:nvSpPr>
+    <p:spPr bwMode="auto">
+        <a:xfrm>
+            <a:off x="255588" y="3208338"/>
+            <a:ext cx="9186862" cy="457200"/>
+        </a:xfrm>
+        <a:prstGeom prst="rect">
+            <a:avLst/>
+        </a:prstGeom>
+        <a:noFill/>
+        <a:ln w="9525" algn="ctr">
+            <a:noFill/>
+            <a:miter lim="800000"/>
+            <a:headEnd/>
+            <a:tailEnd/>
+        </a:ln>
+        <a:effectLst/>
+    </p:spPr>
+    <p:txBody>
+        <a:bodyPr>
+            <a:spAutoFit/>
+        </a:bodyPr>
+        <a:lstStyle/>
+        <a:p>
+            <a:pPr marL="844550" lvl="1" indent="-304800">
+                <a:spcBef>
+                    <a:spcPct val="100000"/>
+                </a:spcBef>
+                <a:tabLst>
+                    <a:tab pos="1160463" algn="l"/>
+                </a:tabLst>
+            </a:pPr>
+            <a:r>
+                <a:rPr lang="en-US"/>
+                <a:t>Slide placeholder for replace</a:t>
+            </a:r>
+            <a:endParaRPr lang="en-GB"/>
+        </a:p>
+    </p:txBody>
+</p:sp>
